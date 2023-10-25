@@ -21,3 +21,7 @@ h1 {
     font-size: 30px;
     font-weight: 800;
 }
+
+.text-line {
+    text-decoration: line-through;
+}

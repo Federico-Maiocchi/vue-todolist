@@ -19,7 +19,12 @@
             <div>
                 <h3>Nuova lista</h3>
                 <ul>
-                    <li v-for="(item, index) in todos" :key="index">{{item.text}}</li>
+                    <li :class="item.done === true ? 'text-line' : '' "
+                        v-for="(item, index) in todos"
+                        :key="index">
+                        {{item.text}}
+                        <i @click="">&Cross;</i>
+                    </li>
                 </ul>
             </div>
             

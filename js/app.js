@@ -5,6 +5,7 @@ const {createApp} = Vue;
 createApp ({
     data() {
         return {
+            currentIndex: 0,
             todos: [
                 {
                     text: 'Fare i compiti',
@@ -24,9 +25,13 @@ createApp ({
     ////////////////////////////////////////////////////////////////////////////
     methods: {
 
+        removeItem(index) {
+            currentIndex = index;
+            
+        }
     },
     ////////////////////////////////////////////////////////////////////////////
     mounted() {
-        console.log('si')
+        // console.log('si')
     }
 }).mount ('#app')
