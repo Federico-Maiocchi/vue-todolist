@@ -6,6 +6,7 @@ createApp ({
     data() {
         return {
             currentIndex: 0,
+            newItem: '',
             todos: [
                 {
                     text: 'Fare i compiti',
@@ -27,8 +28,15 @@ createApp ({
 
         removeItem(index) {
 
-            this.todos.splice(index, 1)
+            this.todos.splice(index, 1);
             
+        },
+
+        addItem() {
+            this.todos.push({text: this.newItem, done: false});
+            // console.log(this.todos.push)
+
+            this.newItem = ''
         }
     },
     ////////////////////////////////////////////////////////////////////////////

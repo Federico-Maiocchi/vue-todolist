@@ -25,3 +25,8 @@ h1 {
 .text-line {
     text-decoration: line-through;
 }
+
+.cross {
+    cursor: pointer;
+    padding: 20px;
+}

@@ -13,12 +13,12 @@
             <h1>To do list</h1>
             <div class="container">
             
-            <input type="text" name="" id="">
-            <button>Aggiungi</button>
+            <input type="text" v-model="newItem" >
+            <button @click="addItem()">Aggiungi</button>
             
             <div>
                 <h3>Nuova lista</h3>
-                <ul>
+                <ul v-if="todos.length > 0">
                     <li :class="item.done === true ? 'text-line' : '' "
                         v-for="(item, index) in todos"
                         :key="index">
@@ -26,6 +26,7 @@
                         <i @click="removeItem(index)">&Cross;</i>
                     </li>
                 </ul>
+                <div v-else class="cross">nussuna lista</div>
             </div>
             
 
