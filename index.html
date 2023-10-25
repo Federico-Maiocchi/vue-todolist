@@ -23,7 +23,7 @@
                         v-for="(item, index) in todos"
                         :key="index">
                         {{item.text}}
-                        <i @click="">&Cross;</i>
+                        <i @click="removeItem(index)">&Cross;</i>
                     </li>
                 </ul>
             </div>

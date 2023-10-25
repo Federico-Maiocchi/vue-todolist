@@ -26,7 +26,8 @@ createApp ({
     methods: {
 
         removeItem(index) {
-            currentIndex = index;
+
+            this.todos.splice(index, 1)
             
         }
     },
