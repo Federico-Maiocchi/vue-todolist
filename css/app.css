@@ -1,22 +1,39 @@
+/* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 ul, ol {
     list-style: none;
 }
+/* //////////////////////// */
+/* utility */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+/* //////////////////////// */
+/* main header */
 h1 {
     text-align: center;
 }
 
+/* //////////////////////// */
+/* main */
 .title {
     font-size: 30px;
     font-weight: 800;

@@ -37,6 +37,10 @@ createApp ({
             // console.log(this.todos.push)
 
             this.newItem = ''
+        },
+
+        changeDone(index) {
+            this.todos[index].done = !this.todos[index].done 
         }
     },
     ////////////////////////////////////////////////////////////////////////////
