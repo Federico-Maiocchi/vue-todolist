@@ -13,8 +13,8 @@
             <h1>To do list</h1>
             <div class="container">
             
-            <input type="text" v-model="newItem" >
-            <button @click="addItem()">Aggiungi</button>
+            <input type="text" v-model="newItem" @keyup.enter="addItem()">
+            <button @click="addItem()" >Aggiungi</button>
             
             <div>
                 <h3>Nuova lista</h3>
